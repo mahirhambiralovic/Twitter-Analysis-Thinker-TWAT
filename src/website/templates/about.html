@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+
+<html>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+<head>
+    <title>
+        About twat
+    </title>
+</head>
+
+
+<body>
+  <h1>Twitter Analysis Thinker (TWAT)</h1>
+
+  <i>Project by Erik Vanhainen and Mahir Hambiralovic.</i>
+
+  <h3>Twitter Analysis Thinker</h3>
+  <b>"Don't worry, be happy"</b> - Bob Marley
+
+  In a world of fake news, echo chambers and too much yelling at each other, we have to break through the noise and find positivity. With TWAT you can do just that. TWAT uses the latest, cutting edge, state of the art, ground up, end-to-end, machine learning, AI, machine intelligence statistical models to rate the positivity of a persons messages. Through the website, you will be able to type a twitter account, and get a summary of the number of positive vs negative tweets this person has posted.
+
+  <h3>How does this work?</h3>
+  With a dataset of over 100 000 tweets, the algorithm analyzes the frequency of a word in positive vs negative messages. Inactive and linking words such as the, he/she, to, is etc. are trimmed. Using a Naive-Bayes algorithm, the algorithm clusters  positive and negative words and compares the words in the test-message by their proximity to positive/negative clusters.
+  <br>
+  <br>
+  <img src={{cat_gif_url}}>
+
+
+
+
+</body>
+</html>
+
+{% endblock %}

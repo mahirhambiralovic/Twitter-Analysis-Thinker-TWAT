@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+
+<html>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+<head>
+    <title>
+        Sentiment analysis
+    </title>
+</head>
+
+
+<body>
+  <h1 align="middle">TWAT</h1>
+  <h2 align="middle">Twitter Analysis Thinker</h2><br>
+  <img src={{learning_gif_url}} align="right">
+  <p>Unsure whether what you're posting is positive or negative? No problem! <br> With the hyper-advanced TWAT engine, you can have the computer tell <br> the sentiment for you! Just insert your text below!</p>
+    <form method="POST">
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="user_input" placeholder="Text to be analyzed" type="text"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Analyze</button>
+    </form>
+    <div>
+      <br>
+      <h3>Input:</h3>
+      {{user_input}}
+      <h3>Result:</h3>
+      {{sentiment}}
+    </div>
+
+
+
+
+</body>
+</html>
+
+{% endblock %}
